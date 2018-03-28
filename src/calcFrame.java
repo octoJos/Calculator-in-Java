@@ -10,8 +10,8 @@
  */
 public class calcFrame extends javax.swing.JFrame {
 double previous_num;
-double current_num=0;
-double operator=0;
+double current_num = 0 ;
+double operator = 0 ;
     /**
      * Creates new form calcFrame
      */
@@ -265,8 +265,8 @@ double operator=0;
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMultActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMultActionPerformed
-    previous_num=Double.parseDouble(jtxtDisplay.getText());
-    operator=3;
+    previous_num = Double.parseDouble(jtxtDisplay.getText());
+    operator = 3;
     jtxtDisplay.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_btnMultActionPerformed
 
@@ -311,46 +311,46 @@ double operator=0;
     }//GEN-LAST:event_btn0ActionPerformed
 
     private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
-    previous_num=Double.parseDouble(jtxtDisplay.getText());
-    operator=1;
+    previous_num = Double.parseDouble(jtxtDisplay.getText());
+    operator = 1;
     jtxtDisplay.setText("");// TODO add your handling code here:
     }//GEN-LAST:event_btnAddActionPerformed
 
     private void btnSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSubActionPerformed
-    previous_num=Double.parseDouble(jtxtDisplay.getText());
-    operator=2;
+    previous_num = Double.parseDouble(jtxtDisplay.getText());
+    operator = 2;
     jtxtDisplay.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_btnSubActionPerformed
 
     private void btnDivActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDivActionPerformed
-    previous_num=Double.parseDouble(jtxtDisplay.getText());
-    operator=4;
+    previous_num = Double.parseDouble(jtxtDisplay.getText());
+    operator = 4;
     jtxtDisplay.setText("");        // TODO add your handling code here:
     }//GEN-LAST:event_btnDivActionPerformed
 
     private void btnEqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEqActionPerformed
            // TODO add your handling code here:
-    if (operator==1)
+    if (operator == 1)
     {
-        current_num=Double.parseDouble(jtxtDisplay.getText());
+        current_num = Double.parseDouble(jtxtDisplay.getText());
         jtxtDisplay.setText(String.valueOf(previous_num + current_num));
        
     }
-    if (operator==2)
+    if (operator == 2)
     {
-        current_num=Double.parseDouble(jtxtDisplay.getText());
+        current_num = Double.parseDouble(jtxtDisplay.getText());
         jtxtDisplay.setText(String.valueOf(previous_num - current_num));
         
     }
-    if (operator==3)
+    if (operator == 3)
     {
-        current_num=Double.parseDouble(jtxtDisplay.getText());
+        current_num = Double.parseDouble(jtxtDisplay.getText());
         jtxtDisplay.setText(String.valueOf(previous_num * current_num));
         
     }
-    if (operator==4)
+    if (operator == 4)
     {
-        current_num=Double.parseDouble(jtxtDisplay.getText());
+        current_num = Double.parseDouble(jtxtDisplay.getText());
         if (current_num != 0)
         {jtxtDisplay.setText(String.valueOf(previous_num / current_num));}
         else
@@ -363,8 +363,8 @@ double operator=0;
 
     private void btnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCActionPerformed
         jtxtDisplay.setText("");
-        previous_num=0;  
-        operator=0;// TODO add your handling code here:
+        previous_num = 0;  
+        operator = 0;// TODO add your handling code here:
     }//GEN-LAST:event_btnCActionPerformed
 
     private void btnCommaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCommaActionPerformed
